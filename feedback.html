@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Assignment 1</title>
+    <style>
+        .textarea {
+            background-color: #000000;
+        }
+    </style>
 </head>
 <body>
+    <div class = "form">
     <form>
-        Name: <input type="text">
+        Name: <input type="text"><br><br>
         Email: <input type="email" required> <br><br>
         <input type = "radio" name="satisfaction" value="very_satisfied"> Very Satisfied
         <input type = "radio" name="satisfaction" value="satisfied"> Satisfied
@@ -22,8 +29,8 @@
             <option value="japan">Japan</option>
             <option value="england">England</option>
         </select> <hr>
-        <textarea placeholder="Write your feedback here..." ></textarea> <br>
-        <input type="submit" value="Submit Feedback">
+        <textarea class = "textarea" placeholder="Write your feedback here..." ></textarea> <br>
+        <input type="submit" value="Submit Feedback"> </div>
     </form>
 </body>
 </html>
