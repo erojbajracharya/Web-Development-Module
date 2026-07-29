@@ -57,7 +57,7 @@ span{
 
 .content {
     position: relative;
-    margin-top: 70px;     
+    margin-top: 70px;
     padding: 20px;
 }
 
@@ -78,4 +78,53 @@ span{
     background: gold;
     padding: 10px;
     border: 2px solid black;
+}
+
+.photos-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.photos-flex img{
+    width: 23%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.photos-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.photos-grid img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+@media (min-width:769px) and (max-width:1024px){
+
+    .photos-flex img{
+        width:48%;
+    }
+
+    .photos-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media (max-width:768px){
+
+    .photos-flex img{
+        width:100%;
+    }
+
+    .photos-grid{
+        grid-template-columns:1fr;
+    }
+
 }

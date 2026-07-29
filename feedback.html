@@ -3,34 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Assignment 1</title>
+
     <style>
-        .textarea {
-            background-color: #000000;
+        .textarea{
+            background-color:#000000;
         }
     </style>
 </head>
 <body>
-    <div class = "form">
-    <form>
-        Name: <input type="text"><br><br>
-        Email: <input type="email" required> <br><br>
-        <input type = "radio" name="satisfaction" value="very_satisfied"> Very Satisfied
-        <input type = "radio" name="satisfaction" value="satisfied"> Satisfied
-        <input type = "radio" name="satisfaction" value="neutral"> Neutral
-        <input type = "radio" name="satisfaction" value="unsatisfied"> Unsatisfied
-        <br><br>
-        <input type ="checkbox" name = "interest" value="web_development"> Web Development
-        <input type ="checkbox" name = "interest" value="Mobile Development"> Data Mobile Development
-        <input type ="checkbox" name = "interest" value="AI & Machine Learning"> AI & Machine Learning <br><br>
-        <select>
-            <option value="nepal">Nepal</option>
-            <option value="japan">Japan</option>
-            <option value="england">England</option>
-        </select> <hr>
-        <textarea class = "textarea" placeholder="Write your feedback here..." ></textarea> <br>
-        <input type="submit" value="Submit Feedback"> </div>
-    </form>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">My Website</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="feedback.html">Feedback</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="photos.html">Photos</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="content">
+
+        <div class="form">
+            <form>
+                Name: <input type="text"><br><br>
+                Email: <input type="email" required><br><br>
+
+                <input type="radio" name="satisfaction" value="very_satisfied"> Very Satisfied
+                <input type="radio" name="satisfaction" value="satisfied"> Satisfied
+                <input type="radio" name="satisfaction" value="neutral"> Neutral
+                <input type="radio" name="satisfaction" value="unsatisfied"> Unsatisfied
+
+                <br><br>
+
+                <input type="checkbox" name="interest" value="web_development"> Web Development
+                <input type="checkbox" name="interest" value="Mobile Development"> Data Mobile Development
+                <input type="checkbox" name="interest" value="AI & Machine Learning"> AI & Machine Learning
+
+                <br><br>
+
+                <select>
+                    <option value="nepal">Nepal</option>
+                    <option value="japan">Japan</option>
+                    <option value="england">England</option>
+                </select>
+
+                <hr>
+
+                <textarea class="textarea" placeholder="Write your feedback here..."></textarea>
+
+                <br>
+
+                <input type="submit" value="Submit Feedback">
+
+            </form>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
